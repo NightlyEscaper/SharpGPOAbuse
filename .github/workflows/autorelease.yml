@@ -80,6 +80,7 @@ jobs:
       run: |
         nuget.exe restore SharpGPOAbuse.sln
         msbuild.exe SharpGPOAbuse.sln /p:Configuration=Release /p:Platform="Any CPU" /p:OutputPath=compiled/
+        Copy-Item -Path SharpGPOAbuse\compiled\SharpGPOAbuse.exe -Destination compiled\SharpGPOAbuse.exe
 
     - name: Build Package
       # Powershell is utter fucking trash. I AGREEEEEEEEEEEE!!!
