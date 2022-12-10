@@ -1,0 +1,25 @@
+{
+    "name": "SharpGPOAbuse",
+    "version": "v0.0.0",
+    "command_name": "sharpgpoabuse",
+    "original_author": "FSecureLABS",
+    "repo_url": "https://github.com/NightlyEscaper/SharpGPOAbuse",
+    "help": "Abuse Group Policy Object.",
+    "entrypoint": "Main",
+    "allow_args": true,
+    "default_args": "-h",
+    "is_reflective": false,
+    "is_assembly": true,
+    "files": [
+      {
+        "os": "windows",
+        "arch": "amd64",
+        "path": "SharpGPOAbuse.exe"
+      },
+      {
+        "os": "windows",
+        "arch": "386",
+        "path": "SharpGPOAbuse.exe"
+      }
+    ]
+  }
